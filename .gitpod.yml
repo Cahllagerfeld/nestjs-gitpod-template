@@ -1,16 +1,6 @@
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: |
+  - name: Install & Start
+    init: |
      npm i -g npm
      npm install
     command: npm run start:dev
-
-github:
-  prebuilds:
-    master: true
-    branches: true
-    pullRequests: true
-    pullRequestsFromForks: true
-    addCheck: true
-    addComment: true
-    addBadge: false
